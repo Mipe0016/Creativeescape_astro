@@ -1,0 +1,25 @@
+---
+import Navigation from "../components/Navigation.astro";
+import "../Styles/style.css";
+
+
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow">
+		<meta name="generator" content={Astro.generator} />
+		<title>Blog post</title>
+	</head>
+    <body>
+        <Navigation/>
+
+    <main>
+    <slot />
+    </main>
+    </body>
+    </html>
